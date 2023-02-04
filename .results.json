@@ -2,12 +2,12 @@
   "stats": {
     "suites": 5,
     "tests": 10,
-    "passes": 10,
+    "passes": 9,
     "pending": 0,
-    "failures": 0,
-    "start": "2023-02-04T04:51:52.768Z",
-    "end": "2023-02-04T04:51:53.160Z",
-    "duration": 392
+    "failures": 1,
+    "start": "2023-02-04T04:55:11.872Z",
+    "end": "2023-02-04T04:55:12.347Z",
+    "duration": 475
   },
   "tests": [
     {
@@ -62,7 +62,7 @@
     {
       "title": "contains \"Welcome, \"",
       "fullTitle": "index.js shortGreeting contains \"Welcome, \"",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -76,13 +76,33 @@
     {
       "title": "ends with an exclamation point",
       "fullTitle": "index.js shortGreeting ends with an exclamation point",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "message": "expected '.' to equal '!'",
+        "showDiff": true,
+        "actual": ".",
+        "expected": "!",
+        "stack": "AssertionError: expected '.' to equal '!'\n    at Context.<anonymous> (test/indexTest.js:55:43)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
     }
   ],
   "pending": [],
-  "failures": [],
+  "failures": [
+    {
+      "title": "ends with an exclamation point",
+      "fullTitle": "index.js shortGreeting ends with an exclamation point",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '.' to equal '!'",
+        "showDiff": true,
+        "actual": ".",
+        "expected": "!",
+        "stack": "AssertionError: expected '.' to equal '!'\n    at Context.<anonymous> (test/indexTest.js:55:43)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
+    }
+  ],
   "passes": [
     {
       "title": "is defined",
@@ -136,7 +156,7 @@
     {
       "title": "contains \"Welcome, \"",
       "fullTitle": "index.js shortGreeting contains \"Welcome, \"",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -144,13 +164,6 @@
       "title": "contains the first initial of the name stored in the 'currentUser' variable",
       "fullTitle": "index.js shortGreeting contains the first initial of the name stored in the 'currentUser' variable",
       "duration": 1,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "ends with an exclamation point",
-      "fullTitle": "index.js shortGreeting ends with an exclamation point",
-      "duration": 0,
       "currentRetry": 0,
       "err": {}
     }

@@ -9,6 +9,6 @@ console.log(welcomeMessage)
 const excitedWelcomeMessage = `WELCOME TO FLATBOOK, ${currentUser}!`;
 console.log(excitedWelcomeMessage)
 
-const shortGreeting = `Welcome, ${currentUser.split("")[0]}!`;
+const shortGreeting = `Welcome, ${currentUser.charAt(0)}!`;
 
 console.log(shortGreeting)
